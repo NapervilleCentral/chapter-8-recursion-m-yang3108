@@ -51,6 +51,7 @@ public class Palindromes
             else
                 return false;
         }
+        return false;
     }
 
 }

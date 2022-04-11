@@ -10,6 +10,7 @@ public class HandoutDemo
     public static void main(String[] args)
     {
         handout michael = new handout();
-        System.out.println(michael.method1(4));
+        michael.method1(4);
+        michael.method2(4);
     }
 }

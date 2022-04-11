@@ -1,4 +1,3 @@
-
 /**
  * Write a description of class handout here.
  *
@@ -25,13 +24,20 @@ public class handout
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public String method1(int n)
+    public static void method1(int n)
     {
         n = Math.abs(n);
-        String returningstuff = "";
-        if (n == 0)
-            return returningstuff;
-        returningstuff += "\n" + n;    
-        return returningstuff + method1(n-1); 
+        System.out.println(n);
+        if(n > 0)
+            method1(n-1);
+        
+    }
+
+    public static void method2(int n)
+    {
+        n = Math.abs(n);        
+        if(n > 0)
+             method1(n+1);
+        System.out.println(n);
     }
 }

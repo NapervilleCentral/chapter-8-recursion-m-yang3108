@@ -14,23 +14,19 @@ public class GCD
     /**
      * Constructor for objects of class GCD
      */
-    public GCD(int num1, int num2)
+    public GCD()
     {
-        x = num1;
-        y = num2;
+        
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * creates a static method that outputs the greatest common factor
      */
     public static int gcd(int num1, int num2)
     {
-        if (num1 <= num2 && num1 % num2 == 0)
+        if (num2 <= num1 && num1 % num2 == 0)
             return num2;
-        if (num1 < num2)
+        else if (num1 < num2)
             return gcd (num2, num1);
         else
             return gcd(num2, num1%num2);

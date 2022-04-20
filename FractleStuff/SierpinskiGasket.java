@@ -47,7 +47,7 @@ public class SierpinskiGasket extends JPanel
     {
         super.paintComponent (page);
        
-        page.setColor (Color.red);
+        page.setColor (Color.white);
         page.drawPolyline (xPos, yPos, xPos.length);
 
         Triangle(xPos,yPos,page);
@@ -70,17 +70,22 @@ public class SierpinskiGasket extends JPanel
        int dysquared = (int)Math.pow(yPos[0] - yPos[1],2);
        int distance = (int)Math.sqrt(dxsquared + dysquared);
 
-
+       page.drawPolyline (xPos, yPos, xPos.length);
+       distance *= 0.5; // increasingly smaller distance
+       
 
         if (distance > 10)
         {
             //find midpoints and draw triangle
-            //int ABMidx = (xPos[0]
-            //int ABMidy = (
+            int ABMidx = ((xPos[0] + xPos[1]) / 2);
+            int ABMidy = ((yPos[0] + yPos[1]) / 2);
             
-            //draw the tri
+            //draw the triangle
             
-            
+            page.setColor(Color.green);
+	      Triangle (ABMidx, ABMidy,page);
+
+
             
             //call the 3 new triangles
            

@@ -79,11 +79,18 @@ public class SierpinskiGasket extends JPanel
             //find midpoints and draw triangle
             int ABMidx = ((xPos[0] + xPos[1]) / 2);
             int ABMidy = ((yPos[0] + yPos[1]) / 2);
+            int BCMidx = ((xPos[1] + xPos[2]) / 2);
+            int BCMidy = ((yPos[1] + yPos[2]) / 2);
+            int ACMidx = ((xPos[0] + xPos[2]) / 2);
+            int ACMidy = ((yPos[0] + yPos[2]) / 2);
+            
             
             //draw the triangle
             
+            
+            
             page.setColor(Color.green);
-	      Triangle (ABMidx, ABMidy,page);
+	      page.drawPolyline(
 
 
             

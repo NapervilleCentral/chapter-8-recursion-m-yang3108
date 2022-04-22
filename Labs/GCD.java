@@ -12,11 +12,10 @@ public class GCD
     private int y;
 
     /**
-     * Constructor for objects of class GCD
+     * Default Constructor for objects of class GCD
      */
     public GCD()
     {
-        
     }
 
     /**
@@ -30,6 +29,6 @@ public class GCD
             return gcd (num2, num1);
         else
             return gcd(num2, num1%num2);
-        
+
     }
 }

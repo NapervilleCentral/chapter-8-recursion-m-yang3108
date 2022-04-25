@@ -16,7 +16,6 @@ public class GetRichQuick
      */
     public GetRichQuick()
     {
-
     }
 
     /**
@@ -25,16 +24,15 @@ public class GetRichQuick
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public int collect(int monetaryGoal)
+    public static int collect(int monetaryGoal)
     {
-        if (dollar == 1)
-            return numberofpayer;
+        if (monetaryGoal <= 1)
+            return 1;
 
         else
         {
-            collect(monetaryGoal);
-            dollar = dollar / 10;
-            return dollar + numberofpayer;
+             
+            return 1 + 10 * collect(monetaryGoal / 10);
         }
     }
 }

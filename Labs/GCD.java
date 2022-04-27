@@ -1,9 +1,8 @@
 
 /**
- * Write a description of class GCD here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Finds the greatest common demonminator
+ * Michael Yang
+ * 4/21/22
  */
 public class GCD
 {

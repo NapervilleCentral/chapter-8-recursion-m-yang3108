@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=GCD
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ GCD\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Finds\ the\ greatest\ common\ demonminator\r\n\ Michael\ Yang\r\n\ 4/21/22\r\n
 comment1.params=
 comment1.target=GCD()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ GCD\r\n
+comment1.text=\r\n\ Default\ Constructor\ for\ objects\ of\ class\ GCD\r\n
 comment2.params=num1\ num2
 comment2.target=int\ gcd(int,\ int)
 comment2.text=\r\n\ creates\ a\ static\ method\ that\ outputs\ the\ greatest\ common\ factor\r\n

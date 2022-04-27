@@ -1,9 +1,8 @@
 
 /**
- * Write a description of class GetRichQuick here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Michael Yang
+ * 4/23/22
+ * GetRichQuick lab - pyramid scheme
  */
 public class GetRichQuick
 {
@@ -19,20 +18,19 @@ public class GetRichQuick
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * @param monetaryGoal which is the target amount of money needed to be raised
+     * 
      */
     public static int collect(int monetaryGoal)
     {
-        if (monetaryGoal <= 1)
+        if (monetaryGoal <= 1) //base case which returns one
             return 1;
 
         else
         {
-             
-            return 1 + 10 * collect(monetaryGoal / 10);
+            return monetaryGoal + collect(monetaryGoal / 10); //recursive procedure
+            //that divides by 10 to increase the total number of people until the
+            //base case is met
         }
     }
 }

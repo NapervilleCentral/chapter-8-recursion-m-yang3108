@@ -8,7 +8,8 @@ import java.util.Scanner;
  */
 public class PinWordEnumerator
 {
-    private static String wordy = "";
+    private static String word1 = "";
+    
     public static void main(String[] args)
     {
         Scanner scan = new Scanner(System.in);
@@ -26,7 +27,7 @@ public class PinWordEnumerator
      */
     public static void enumerateWords(String n)
     {
-         enumerateWords(n, wordy);
+         enumerateWords(n, word1);
     }
 
     /**
@@ -38,15 +39,15 @@ public class PinWordEnumerator
     public static void enumerateWords(String pin, String word)
     {
         if (pin.length() == 0)
-            System.out.printf("%s%n",wordy);
+            System.out.printf("%s%n",word1);
         else
         {
-            String[] map = {"0","1","ABC","DEF","GHI","JKL","MNO","PQRS","TUV","WXYZ"};
-            for (int i = 0; i < map[Integer.parseInt(pin.substring(0, 1))].length(); i++)
+            String[] map = {"0","1","ABC","DEF","GHI","JKL","MNO","PQRS","TUV","WXYZ"}; //creates an array map
+            for (int i = 0; i < map[Integer.parseInt(pin.substring(0, 1))].length(); i++) //uses substring and a for loop to recursively generate words
             {
-                wordy = word;
-                wordy += map[Integer.parseInt(pin.substring(0, 1))].substring(i, i+1);
-                enumerateWords(pin.substring(1), wordy);
+                word1 = word;
+                word1 += map[Integer.parseInt(pin.substring(0, 1))].substring(i, i+1);
+                enumerateWords(pin.substring(1), word1);
             }
         }
     }
